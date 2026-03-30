@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keskustelusivu</title>
+    <style>
+        .comment {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .meta {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="keskustelu.html">Keskustelu</a>
+        <a href="semanttinen.html">Työkokemus</a>
+    </nav>
+
+    <h1>Keskustelusivu</h1>
+
+    <form>
+        <label for="email">Sähköposti:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="birthdate">Syntymäpäivä:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="type">Viestin tyyppi:</label><br>
+        <select id="type" name="type">
+            <option value="kysymys">Kysymys</option>
+            <option value="kommentti">Kommentti</option>
+        </select><br><br>
+
+        <label for="message">Viesti:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <input type="checkbox" id="consent" name="consent">
+        <label for="consent">Hyväksyn, että tietojani käytetään markkinoinnissa</label><br><br>
+
+        <button type="submit">Lähetä</button>
+    </form>
+
+        <article class="comment">
+            <div class="meta">arja@edu.turku.fi - 3.2.2025 klo 11:22</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </article>
+
+        <article class="comment">
+            <div class="meta">artu@edu.turku.fi - 6.2.2025 klo 12:21</div>
+            <p>Hic maiores temporibus culpa porro repellat, corrupti laborum commodi maxime?</p>
+        </article>
+
+        <article class="comment">
+            <div class="meta">pertu@edu.turku.fi - 7.2.2025 klo 14:05</div>
+            <p>Tämä on esimerkkikommentti sivulle.</p>
+        </article>
+
+        <article class="comment">
+            <div class="meta">laura@edu.turku.fi - 8.2.2025 klo 09:45</div>
+            <p>Toinen esimerkkiviesti keskusteluun.</p>
+        </article>
+</body>
+</html>
