@@ -25,6 +25,13 @@
 
     <h1>Keskustelusivu</h1>
 
+    <button id="openDialog">Kommentoi</button>
+
+    <dialog id="commentDialog">
+        <form method="dialog">
+            <button type="button" id="closeDialog">Sulje</button>
+        </form>
+
     <form>
         <label for="email">Sähköposti:</label><br>
         <input type="email" id="email" name="email" required><br><br>
@@ -46,6 +53,21 @@
 
         <button type="submit">Lähetä</button>
     </form>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById("commentDialog");
+        const openBtn = document.getElementById("openDialog");
+        const closeBtn = document.getElementById("closeDialog");
+
+        openBtn.addEventListener("click", () => {
+            dialog.showModal();
+        });
+
+        closeBtn.addEventListener("click", () => {
+            dialog.close();
+        });
+    </script>
 
         <article class="comment">
             <div class="meta">arja@edu.turku.fi - 3.2.2025 klo 11:22</div>
