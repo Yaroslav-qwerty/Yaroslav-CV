@@ -63,23 +63,27 @@ header {
   grid-area: header;
   background: #4cff3b;
   padding: 1rem;
+  border: 1px solid black
 }
 
 nav {
   grid-area: nav;
   background: #c6ff28;
   padding: 1rem;
+  border: 1px solid black
 }
 
 main {
   grid-area: main;
   background: #89daff;
   padding: 1rem;
+  border: 1px solid black
 }
 
 footer {
   grid-area: footer;
   background: #ffa2a2;
   padding: 1rem;
+  border: 1px solid black
 }
 
