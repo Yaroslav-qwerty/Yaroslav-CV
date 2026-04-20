@@ -2,8 +2,18 @@ body {
     background-color: #f9fcff;
     margin-left: 64px;
     margin-right: 64px;
-    font-family: Arial, sans-serif;
+    font-family:"Play1", sans-serif;
     color: #2c2c2c;
+}
+
+@font-face {
+  font-family: "Play";
+  src: url(PlaywriteNO-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Play1";
+  src: url(Sekuya-Regular.ttf);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,18 +21,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
+    font-family: "Play";
     font-size: 60px;
 }
 
 h2 {
+    font-family: "Play";
     font-size: 48px;
 }
 
 h3 {
+    font-family: "Play";
     font-size: 32px;
 }
 
 h4 {
+    font-family: "Play";
     font-size: 18px;
 }
 
@@ -47,25 +61,25 @@ section {
 
 header {
   grid-area: header;
-  background: #7bff6f;
+  background: #4cff3b;
   padding: 1rem;
 }
 
 nav {
   grid-area: nav;
-  background: #d1ff53;
+  background: #c6ff28;
   padding: 1rem;
 }
 
 main {
   grid-area: main;
-  background: #cdefff;
+  background: #89daff;
   padding: 1rem;
 }
 
 footer {
   grid-area: footer;
-  background: #ffbaba;
+  background: #ffa2a2;
   padding: 1rem;
 }
 
