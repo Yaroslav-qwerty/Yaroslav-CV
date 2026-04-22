@@ -3,7 +3,7 @@ body {
     margin-left: 16px;
     margin-right: 16px;
     font-family:"Play1", sans-serif;
-    color: #2c2c2c;
+    color: #ffffff;
 }
 
 @font-face {
@@ -21,7 +21,7 @@ nav a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #2e4358; 
+    color: #e6f2ff; 
     font-family: "Play";
 }
 
@@ -85,29 +85,32 @@ section {
 
 header {
   grid-area: header;
-  background: #4cff3b;
+  background: #229717;
   padding: 1rem;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
 nav {
   grid-area: nav;
-  background: #c6ff28;
+  background: #91bd19;
   padding: 1rem;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
 main {
   grid-area: main;
-  background: #89daff;
+  background: #15aff7;
   padding: 1rem;
-  border: 1px solid black
+  border: 1px solid black;
+  background-image: url("Kirito.png");
+
+  background-position: center top;
 }
 
 footer {
   grid-area: footer;
-  background: #ffa2a2;
+  background: #fd5757;
   padding: 1rem;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
