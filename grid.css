@@ -1,6 +1,8 @@
 body {
     background-color: #f9fcff;
-    font-family: "Play1", sans-serif;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-family:"Play1", sans-serif;
     color: #2c2c2c;
 }
 
@@ -14,18 +16,61 @@ body {
   src: url(Sekuya-Regular.ttf);
 }
 
+nav a {
+  display: block;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Play";
     color: #2e4358; 
+    font-family: "Play";
+}
+
+h1 { 
+  font-size: 32px; 
+}
+h2 { 
+  font-size: 26px; 
+}
+h3 { 
+  font-size: 22px; 
+}
+h4 { 
+  font-size: 18px; 
+}
+
+@media (min-width: 640px) {
+
+body {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+  nav a {
+    display: inline-block;
+    margin-right: 16px;
+  }
+
+  h1 { 
+    font-size: 60px; 
+  }
+  h2 { 
+    font-size: 48px; 
+  }
+  h3 { 
+    font-size: 32px; 
+  }
+  h4 { 
+    font-size: 18px; 
+  }
 }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    "header header header header header header"
-    "nav nav nav nav nav nav"
-    "aside main main main main main"
-    "footer footer footer footer footer footer";
+    "header header header header header header header header header"
+    "nav nav nav nav nav nav nav nav nav"
+    "aside main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer";
   grid-template-rows: auto auto 1fr auto;
   height: 100vh;
 }
