@@ -35,13 +35,11 @@ function kerto2(luku1, luku2) {
 
 function jako2(luku1, luku2) {
     if (b == 0) {
-        document.getElementById("tulos").innerText = "Ei voi jakaa nollalla";
+        document.getElementById("tulos").innerText = "En osaa laskea!";
     } else {
         document.getElementById("tulos").innerText = luku1 / luku2;
     }
 }
-
-
 
 function summa3() {
     let luku11 = Number(document.getElementById("luku1").value);
