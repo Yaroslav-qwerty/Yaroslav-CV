@@ -1,24 +1,43 @@
 console.log("Muuttujia ja tietotyyppejä-sivu avattu");
 
-let a = 3;
-let b = 5;
-let c = 7;
-let d = 15;
+function ab1() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    summa(a, b);
+}
 
-function summa() {
+function ab2() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    vahennys(a, b);
+}
+
+function ab3() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    kerto(a, b);
+}
+
+function ab4() {
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    jako(a, b);
+}
+
+function summa(a, b) {
     alert(a + b);
 }
 
-function vahennys() {
-    alert(b - c);
+function vahennys(a, b) {
+    alert(a - b);
 }
 
-function kerto() {
-    alert(c * d);
+function kerto(a, b) {
+    alert(a * b);
 }
 
-function jako() {
-    alert(d / a);
+function jako(a, b) {
+    alert(a / b);
 }
 
 function summa2(luku1, luku2) {
