@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Portfolio, Koval, Yaroslav">
-    <meta name="description" content="Yaroslav Koval Portfolio verkkosivusto">
-    <meta name="author" content="Yaroslav Koval">  
-    <link rel="icon" href="icon.png" type="image/png">  
     <link rel="stylesheet" href="grid.css">
-    <title>Portfolio</title>
+    <title>Henkilötiedot</title>
 </head>
 <body>
   <div class="grid-container">
     <header>
-        <h2>Portfolio</h2>
+        <h2>Henkilötiedot</h2>
     </header>
     <nav> 
-        <a href="index.html" style="color:aqua">Etusivu</a>
-        <a href="semanttinen.html" style="color:aqua">Työkokemus</a>
         <a href="portfolio.html" style="color:aqua">Portfolio</a>
     </nav>
     <aside>
@@ -27,15 +21,26 @@
         <p><a href="tehtävälista.html">Tehtävälista</a></p>
         <p><a href="henkilötiedot.html">Henkilötiedot</a></p>
     </aside>
-    <main>        
-        <h2>Portfolio</h2>
+    <main> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Ikä</th>
+                    <th>Työ</th>
+                    <th>Ajokortti</th>
+                </tr>
+            </thead>
+            <tbody id="rivit">
+            </tbody>
+        </table>
     </main>
     <footer>
         <a href=https://turku.inschool.fi>Wilma</a>
         <a href=https://taito.edu.turku.fi>Moodle</a>
         <a href=https://tai.fi>TAI</a>
     </footer>
-  </div> 
-<script src="portfolio.js"></script>   
+  </div>
+<script src="henkilötiedot.js"></script>   
 </body>
 </html>
