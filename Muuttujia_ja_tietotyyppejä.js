@@ -1,5 +1,7 @@
 console.log("Muuttujia ja tietotyyppejä-sivu avattu");
 
+// Muuttujia
+
 function ab1() {
     let a = Number(document.getElementById("a").value);
     let b = Number(document.getElementById("b").value);
@@ -39,6 +41,8 @@ function kerto(a, b) {
 function jako(a, b) {
     alert(a / b);
 }
+
+//  Laskin
 
 function summa2(luku1, luku2) {
     document.getElementById("tulos").innerText = luku1 + luku2;
