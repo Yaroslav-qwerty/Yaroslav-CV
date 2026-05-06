@@ -57,7 +57,7 @@ function kerto2(luku1, luku2) {
 }
 
 function jako2(luku1, luku2) {
-    if (b == 0) {
+    if (luku2 == 0) {
         document.getElementById("tulos").innerText = "En osaa laskea!";
     } else {
         document.getElementById("tulos").innerText = luku1 / luku2;
@@ -93,14 +93,15 @@ function jako3() {
 function DateTime() {
     const nyt = new Date();
 
+    const viikonpaiva = nyt.getDay();
     const paiva = nyt.getDate();
     const kuukausi = nyt.getMonth();
     const vuosi = nyt.getFullYear();
 
-    const tunnit = nyt.getHours()
-    const minuutit = nyt.getMinutes()
-    const sekunnit = nyt.getSeconds()
-
+    const tunnit = nyt.getHours();
+    const minuutit = nyt.getMinutes();
+    const sekunnit = nyt.getSeconds();
+    
     const viikonpaivat = [
         "sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"
     ];
@@ -112,8 +113,8 @@ function DateTime() {
     const paivamaara1 = `${paiva}.${kuukausi + 1}.${vuosi}`;
     const aika1 = `${tunnit}.${minuutit}.${sekunnit}`;
     const paivaJaAika1 = `${paivamaara1} klo ${aika1}`;
-    const viikonpaivat1 = ``
-    const kuukaudet1 = ``
+    const viikonpaivat1 = `${viikonpaivat[viikonpaiva]}`;
+    const kuukaudet1 = `${kuukaudet[kuukausi]}`;
 
     document.getElementById("paivamaara").textContent = paivamaara1;
     document.getElementById("aika").textContent = aika1;
