@@ -37,6 +37,9 @@
         <p><a href="henkilötiedot.html">Henkilötiedot</a></p>
     </aside>
     <main>        
+        
+    <script src="keskustelu.js"></script>
+
         <button id="openDialog">Kommentoi</button>
 
     <dialog id="commentDialog">
@@ -49,7 +52,7 @@
         <input type="email" id="email" name="email" required><br><br>
 
         <label for="birthdate">Syntymäpäivä:</label><br>
-        <input type="date" id="birthdate" name="birthdate"><br><br>
+        <input type="date" id="birthday" name="birthday"><br><br>
 
         <label for="type">Viestin tyyppi:</label><br>
         <select id="type" name="type">
@@ -58,9 +61,9 @@
         </select><br><br>
 
         <label for="message">Viesti:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
+        <textarea id="body" name="message"></textarea><br><br>
 
-        <input type="checkbox" id="consent" name="consent">
+        <input type="checkbox" id="usage" name="consent">
         <label for="consent">Hyväksyn, että tietojani käytetään markkinoinnissa</label><br><br>
 
         <button type="submit" onclick="send(event)">Lähetä</button>
@@ -106,6 +109,6 @@
         <a href=https://taito.edu.turku.fi>Moodle</a>
         <a href=https://tai.fi>TAI</a>
     </footer>
-<script src="keskustelu.js"></script>
+
 </body>
 </html>

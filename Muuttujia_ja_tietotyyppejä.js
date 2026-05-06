@@ -42,7 +42,7 @@ function jako(a, b) {
     alert(a / b);
 }
 
-//  Laskin
+// Laskin
 
 function summa2(luku1, luku2) {
     document.getElementById("tulos").innerText = luku1 + luku2;
@@ -86,4 +86,38 @@ function jako3() {
     let luku11 = Number(document.getElementById("luku1").value);
     let luku22 = Number(document.getElementById("luku2").value);
     jako2(luku11, luku22);
+}
+
+// Päivämäärä
+
+function DateTime() {
+    const nyt = new Date();
+
+    const paiva = nyt.getDate();
+    const kuukausi = nyt.getMonth();
+    const vuosi = nyt.getFullYear();
+
+    const tunnit = nyt.getHours()
+    const minuutit = nyt.getMinutes()
+    const sekunnit = nyt.getSeconds()
+
+    const viikonpaivat = [
+        "sunnuntai", "maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "lauantai"
+    ];
+
+    const kuukaudet = [
+        "tammikuu", "helmikuu", "maaliskuu", "huhtikuu", "toukokuu", "kesäkuu", "heinäkuu", "elokuu", "syyskuu", "lokakuu", "marraskuu", "joulukuu"
+    ];
+
+    const paivamaara1 = `${paiva}.${kuukausi + 1}.${vuosi}`;
+    const aika1 = `${tunnit}.${minuutit}.${sekunnit}`;
+    const paivaJaAika1 = `${paivamaara1} klo ${aika1}`;
+    const viikonpaivat1 = ``
+    const kuukaudet1 = ``
+
+    document.getElementById("paivamaara").textContent = paivamaara1;
+    document.getElementById("aika").textContent = aika1;
+    document.getElementById("paivaJaAika").textContent = paivaJaAika1;
+    document.getElementById("viikonpaiva").textContent = viikonpaivat1;
+    document.getElementById("kuukausi").textContent = kuukaudet1;
 }
