@@ -25,15 +25,42 @@
         <table>
             <thead>
                 <tr>
-                    <th>Nimi</th>
-                    <th>Ikä</th>
-                    <th>Työ</th>
-                    <th>Ajokortti</th>
+                    <th style="background-color: rgb(0, 80, 255)">Nimi</th>
+                    <th style="background-color: rgb(0, 80, 255)">Ikä</th>
+                    <th style="background-color: rgb(0, 80, 255)">Työ</th>
+                    <th style="background-color: rgb(0, 80, 255)">Ajokortti</th>
                 </tr>
             </thead>
-            <tbody id="rivit">
+            <tbody style="background-color: rgb(0, 80, 255)" id="rivit">
             </tbody>
         </table>
+
+        <h2>Lisää henkilö</h2>
+
+        <form>
+
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi">
+
+        <br><br>
+
+        <label for="ika">Ikä:</label>
+        <input type="number" id="ika">
+
+        <br><br>
+
+        <label for="tyo">Työ:</label>
+        <input type="text" id="tyo">
+
+        <br><br>
+
+        <label for="ajokortti">Ajokortti:</label>
+        <input type="checkbox" id="ajokortti">
+
+        <br><br>
+
+        <button type="button" onclick="lisaaHenkilo()">Lähetä</button>
+        </form>
     </main>
     <footer>
         <a href=https://turku.inschool.fi>Wilma</a>

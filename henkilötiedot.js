@@ -46,8 +46,24 @@ function luoRivit() {
     let ika = document.createElement("td");
     ika.textContent = henkilo.age;
 
+    let ikaTeksti = henkilo.age;
+
+    if (henkilo.age >= 18) {
+      ikaTeksti += " 🍺";
+    }
+
+    ika.textContent = ikaTeksti;
+
     let tyo = document.createElement("td");
     tyo.textContent = henkilo.job;
+
+    let tyoTeksti = henkilo.job;
+
+    if (henkilo.job.toLowerCase() === "opiskelija") {
+      tyoTeksti += " 🎓";
+    }
+
+    tyo.textContent = tyoTeksti;
 
     let ajokortti = document.createElement("td");
     ajokortti.textContent = henkilo.driversLicense ? "On" : "Ei";
@@ -59,6 +75,32 @@ function luoRivit() {
 
     rivit.appendChild(tr);
   });
+}
+
+function lisaaHenkilo() {
+
+  let nimi = document.getElementById("nimi").value;
+  let ika = Number(document.getElementById("ika").value);
+  let tyo = document.getElementById("tyo").value;
+  let ajokortti = document.getElementById("ajokortti").checked;
+
+  if (ika < 0) {
+
+    alert("Iän pitää olla positiivinen luku!");
+
+  } else {
+
+    let uusiHenkilo = {
+      name: nimi,
+      age: ika,
+      job: tyo,
+      driversLicense: ajokortti
+    };
+
+    henkilot.push(uusiHenkilo);
+
+    luoRivit();
+  }
 }
 
 luoRivit();
