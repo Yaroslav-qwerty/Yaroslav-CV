@@ -122,3 +122,43 @@ function DateTime() {
     document.getElementById("viikonpaiva").textContent = viikonpaivat1;
     document.getElementById("kuukausi").textContent = kuukaudet1;
 }
+// Setit
+
+const Veijo = new Set(["luku", "poisto"]);
+const Elvira = new Set(["luku", "kirjoitus", "muokkaus"]);
+const Mehdi = new Set(["luku", "muokkaus", "poisto"]);
+const Tuuli = new Set(["kirjoitus", "poisto"]);
+
+function taytaLista(setti, ulElementti) {
+    setti.forEach(a => {
+        const li = document.createElement("li");
+        li.textContent = a;
+        ulElementti.appendChild(li);
+    });
+}
+
+taytaLista(Veijo, document.querySelector("#Veijo ul"));
+taytaLista(Elvira, document.querySelector("#Elvira ul"));
+taytaLista(Mehdi, document.querySelector("#Mehdi ul"));
+taytaLista(Tuuli, document.querySelector("#Tuuli ul"));
+
+const veijoTuuli = new Set([...Veijo, ...Tuuli]);
+
+taytaLista(
+  veijoTuuli,
+  document.querySelector("#veijotuuli")
+);
+
+const mehdiElvira = new Set([...Mehdi, ...Elvira]);
+
+taytaLista(
+  mehdiElvira,
+  document.querySelector("#mehdielvira")
+);
+
+const elviraTuuli = new Set([...Elvira, ...Tuuli]);
+
+taytaLista(
+  elviraTuuli,
+  document.querySelector("#elviratuuli")
+);
