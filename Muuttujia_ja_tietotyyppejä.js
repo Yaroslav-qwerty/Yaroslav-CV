@@ -122,6 +122,7 @@ function DateTime() {
     document.getElementById("viikonpaiva").textContent = viikonpaivat1;
     document.getElementById("kuukausi").textContent = kuukaudet1;
 }
+
 // Setit
 
 const Veijo = new Set(["luku", "poisto"]);
@@ -162,3 +163,38 @@ taytaLista(
   elviraTuuli,
   document.querySelector("#elviratuuli")
 );
+
+// Math-objekti
+
+function abs() {
+    let luku = Number(document.getElementById("luku1").value);
+    alert(Math.abs(luku));
+}
+
+function sqrt() {
+    let luku = Number(document.getElementById("luku1").value);
+    alert(Math.sqrt(luku));
+}
+
+function pow() {
+    let luku11 = Number(document.getElementById("luku1").value);
+    let luku22 = Number(document.getElementById("luku2").value);
+    alert(Math.pow(luku11, luku22));
+}
+
+function max() {
+    let luku11 = Number(document.getElementById("luku1").value);
+    let luku22 = Number(document.getElementById("luku2").value);
+    alert(Math.max(luku11, luku22));
+}
+
+function min() {
+    let luku11 = Number(document.getElementById("luku1").value);
+    let luku22 = Number(document.getElementById("luku2").value);
+    alert(Math.min(luku11, luku22));
+}
+
+function round() {
+    let luku = Number(document.getElementById("luku1").value);
+    alert(Math.round(luku));
+}
