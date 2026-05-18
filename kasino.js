@@ -26,7 +26,7 @@ function Lotto() {
     });
 
 
-    let käyttäjänNumerot = [
+    let käyttäjänNum = [
         Number(document.getElementById("num1").value),
         Number(document.getElementById("num2").value),
         Number(document.getElementById("num3").value),
@@ -38,7 +38,7 @@ function Lotto() {
 
     let oikein = 0;
 
-    for (let numero of käyttäjänNumerot) {
+    for (let numero of käyttäjänNum) {
         if (numerot.includes(numero)) {
             oikein++;
         }
