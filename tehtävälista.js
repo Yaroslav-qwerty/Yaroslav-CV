@@ -1,5 +1,7 @@
 console.log("tehtävälista-sivu avattu");
 
+// Tehtävälista
+
 let lisaa1 = ["Tehtävä 1", "Tehtävä 2"];
 
 function paivitaLista() {
@@ -22,3 +24,8 @@ function lisaa() {
 }
 
 paivitaLista();
+
+// Silmukka
+
+
+    
