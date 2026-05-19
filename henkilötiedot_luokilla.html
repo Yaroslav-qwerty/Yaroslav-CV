@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Portfolio, Koval, Yaroslav">
-    <meta name="description" content="Yaroslav Koval Portfolio verkkosivusto">
-    <meta name="author" content="Yaroslav Koval">  
-    <link rel="icon" href="icon.png" type="image/png">  
     <link rel="stylesheet" href="grid.css">
-    <title>Portfolio</title>
+    <title>Henkilötiedot luokilla</title>
 </head>
 <body>
   <div class="grid-container">
     <header>
-        <h2>Portfolio</h2>
+        <h2>Henkilötiedot luokilla</h2>
     </header>
     <nav> 
-        <a href="index.html" style="color:aqua">Etusivu</a>
-        <a href="semanttinen.html" style="color:aqua">Työkokemus</a>
         <a href="portfolio.html" style="color:aqua">Portfolio</a>
     </nav>
     <aside>
@@ -28,18 +22,21 @@
         <p><a href="henkilötiedot.html">Henkilötiedot</a></p>
         <p><a href="kasino.html">Kasino</a></p>
         <p><a href="merkkijonot.html">Merkkijonot</a></p>
+        <p><a href="henkilötiedot_luokilla.html">Henkilötiedot luokilla</a></p>
     </aside>
-    <main>        
-        <h2>Portfolio</h2>
-        <h3>Yaroslav Koval</h3>
-        <h4>Rakastan tietokonepelejä ja anime</h4>
-    </main>
-    <footer>
-        <a href=https://turku.inschool.fi>Wilma</a>
-        <a href=https://taito.edu.turku.fi>Moodle</a>
-        <a href=https://tai.fi>TAI</a>
-    </footer>
-  </div> 
-<script src="portfolio.js"></script>   
+    <main> 
+        <h2>Henkilöt</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="background-color: rgb(0, 80, 255)">Nimi</th>
+                    <th style="background-color: rgb(0, 80, 255)">Ikä</th>
+                    <th style="background-color: rgb(0, 80, 255)">Työ</th>
+                    <th style="background-color: rgb(0, 80, 255)">Ajokortti</th>
+                </tr>
+            </thead>
+            <tbody style="background-color: rgb(0, 80, 255)" id="rivit"></tbody>
+        </table>
+<script src="henkilötiedot_luokilla.js"></script> 
 </body>
 </html>

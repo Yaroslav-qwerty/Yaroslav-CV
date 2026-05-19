@@ -1,4 +1,5 @@
 console.log("henkilötiedot-sivu avattu");
+
 let henkilot = [
   {
     name: "Merja Meikäläinen",
