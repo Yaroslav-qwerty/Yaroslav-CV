@@ -8,6 +8,7 @@ function paivitaLista() {
   let ul = document.getElementById("lista1");
 
     ul.innerHTML = "";
+
     for (let tehtava of lisaa1) {
         let li = document.createElement("li");
         li.innerHTML = tehtava;
@@ -17,10 +18,17 @@ function paivitaLista() {
 
 function lisaa() {
     let input = document.getElementById("uusiTehtava");
+    let maara1 = document.getElementById("maara");
     let arvo = input.value;
-    lisaa1.push(arvo);
+    let maara = Number(maara1.value);
+    
+    for (let i = 0; i < maara; i++) {
+        lisaa1.push(arvo);
+    }
+
     paivitaLista();
     input.value = "";
+    maara1.value = 1;
 }
 
 paivitaLista();
