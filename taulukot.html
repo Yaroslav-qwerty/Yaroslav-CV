@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Taulukot</title>
+</head>
+<body>
+  <div class="grid-container">
+    <header>
+        <h2>Taulukot</h2>
+    </header>
+    <nav> 
+        <a href="portfolio.html" style="color:aqua">Portfolio</a>
+    </nav>
+    <aside>
+        <p><a href="keskustelu.html">Keskustelu</a></p>
+        <p><a href="flex.html">Flex</a></p>
+        <p><a href="Muuttujia_ja_tietotyyppejä.html">Muuttujia ja tietotyyppejä</a></p>
+        <p><a href="tehtävälista.html">Tehtävälista</a></p>
+        <p><a href="henkilötiedot.html">Henkilötiedot</a></p>
+        <p><a href="kasino.html">Kasino</a></p>
+        <p><a href="merkkijonot.html">Merkkijonot</a></p>
+        <p><a href="henkilötiedot_luokilla.html">Henkilötiedot luokilla</a></p>
+        <p><a href="Media.html">Media</a></p>
+        <p><a href="taulukot.html">Taulukot</a></p>
+    </aside>
+    <main>  
+        <h3>Taulukot</h3>   
+
+        <h2>Poimi elementti</h2>
+        <input type="number" id="poimiNumero" placeholder="Anna indeksi">
+        <button onclick="naytaSana()">Näytä</button>
+        <div id="poimiTulos"></div>
+
+        <h2>Löydä indeksi</h2>
+        <input type="text" id="haeSana" placeholder="Anna sana">
+        <button onclick="naytaIndeksi()">Näytä</button>
+        <div id="indeksiTulos"></div>
+
+        <h2>Leikkaa taulukko</h2>
+        <input type="number" id="leikkaaAlku" placeholder="Alkuindeksi">
+        <input type="number" id="leikkaaLoppu" placeholder="Loppuindeksi">
+        <button onclick="leikkaaTaulukko()">Näytä</button>
+        <ul id="leikkaaTulos"></ul>
+
+        <h2>Järjestä</h2>
+        <button onclick="tulostaSanat()">Tulosta tekstit</button>
+        <button onclick="jarjestaSanat()">Järjestä tekstit</button>
+        <button onclick="kaannaSanat()">Käännä tekstien järjestys</button>
+        <br>
+        <button onclick="tulostaNumerot()">Tulosta numerot</button>
+        <button onclick="jarjestaNumerot()">Järjestä numerot</button>
+        <button onclick="kaannaNumerot()">Käännä numeroiden järjestys</button>
+        <ul id="jarjestaTulos"></ul>
+
+        <h2>Suodata</h2>
+        <input type="number" id="suodatinNumero" placeholder="Anna luku">
+        <button onclick="tulostaNumerotSuodatus()">Tulosta numerot</button>
+        <button onclick="valitsePienemmat()">Valitse pienemmät</button>
+        <button onclick="valitseSuuremmat()">Valitse suuremmat</button>
+        <ul id="suodataTulos"></ul>
+    </main>
+    <footer>
+        <a href=https://turku.inschool.fi>Wilma</a>
+        <a href=https://taito.edu.turku.fi>Moodle</a>
+        <a href=https://tai.fi>TAI</a>
+    </footer>
+  </div>
+<script src="taulukot.js"></script>
+</body>
+</html>
