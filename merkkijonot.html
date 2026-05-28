@@ -29,7 +29,37 @@
     <main>  
         <h3>Merkkijonot</h3>   
 
-        
+        <h2>Poimi kirjain</h2>
+        <input type="text" id="teksti1" placeholder="Kirjoita teksti">
+        <input type="number" id="numero1" placeholder="Indeksi">
+        <button onclick="poimiKirjain()">Näytä</button>
+        <div id="tulos1"></div>
+
+        <h2>Löydä indeksi</h2>
+        <input type="text" id="teksti2" placeholder="Teksti">
+        <input type="text" id="hakusana" placeholder="Haettava merkki">
+        <button onclick="loydaIndeksi()">Näytä</button>
+        <div id="tulos2"></div>
+
+        <h2>Leikkaa merkkijono</h2>
+        <input type="text" id="teksti3" placeholder="Teksti">
+        <input type="number" id="alku" placeholder="Alku">
+        <input type="number" id="loppu" placeholder="Loppu">
+        <button onclick="leikkaaMerkkijono()">Näytä</button>
+        <div id="tulos3"></div>
+
+        <h2>Etsi ja korvaa</h2>
+        <input type="text" id="teksti4" placeholder="Teksti">
+        <input type="text" id="etsi" placeholder="Etsi">
+        <input type="text" id="korvaa" placeholder="Korvaa">
+        <button onclick="etsiJaKorvaa()">Näytä</button>
+        <div id="tulos4"></div>
+
+        <h2>Poikki ja pinoon</h2>
+        <input type="text" id="teksti5" placeholder="Teksti">
+        <input type="text" id="jakaja" placeholder="Jakaja">
+        <button onclick="poikkiJaPinoon()">Näytä</button>
+        <ul id="lista"></ul>
     </main>
     <footer>
         <a href=https://turku.inschool.fi>Wilma</a>
